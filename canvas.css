@@ -1,0 +1,20 @@
+#valentinesMessage {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 3em;
+  z-index: 10;
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  50%  { transform: translate(-50%, -50%) scale(1.05); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
